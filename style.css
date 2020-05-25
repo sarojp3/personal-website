@@ -1,0 +1,247 @@
+ /*Master Styles*/
+ body{
+     font-family: "PT Serif";
+     margin:0px;
+     padding:0px;
+     overflow-x: hidden;
+     letter-spacing: 1px;
+     word-spacing: 1px;
+ }
+ .container{
+     overflow-y: scroll;
+     scroll-behavior: smooth;
+ }
+
+ /*Nav Styles*/
+ .nav-wrapper{
+     display: flex;
+     justify-content: space-between;
+     padding:18px;
+ }
+    
+ .left-side{
+     display: flex;
+ }
+ .nav-link-wrapper span{
+     margin-bottom: 30px;
+ }
+ .nav-wrapper > .left-side > div{
+    margin-right:30px;
+    font-size:17px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-link-wrapper{
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color:rgb(67, 112, 170);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper li{
+    list-style: none;
+}
+.nav-link-wrapper .active a:hover{
+    color: black;
+}
+.nav-link-wrapper:hover{
+    border-bottom:1px solid black;
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+.right-side{
+    display: flex;
+}
+.right-side .social-media img{
+    display: inline;
+    margin-left: 14px;
+}
+
+/*Home Page Styles*/
+
+.portfolio-items-wrapper{
+    width: 100%;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    bottom:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+.img-text-wrapper h1{
+    font-size: 50px;
+    color: lightcoral;
+}
+.img-text-wrapper p{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.img-text-wrapper .signature{
+    margin-top: 60px;
+}
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.profile-image-wrapper img{
+    width:440px;;
+    height:440px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.profile-content-wrapper{
+    padding:15px;
+    
+}
+
+.profile-content-wrapper h1{
+    color: lightseagreen;
+    font-style: italic;
+    text-align: center;
+}
+.profile-content-wrapper p{
+    font-size: 18px;
+    font-family:Lobster;
+
+}
+.profile-content-wrapper span{
+    font-style: italic;
+    font-size: large;
+    justify-content: right;
+    margin-left: 40px;
+    color:rgb(81, 36, 141);
+    
+}
+
+/*Skill Styles*/
+
+.title{
+    text-align: center;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    
+}
+.skill-list h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(237, 191, 64);
+}
+.skill-list p{
+    font-weight: bold;
+}
+.title .skill-list img{
+    width: 150px;
+    height:150px;
+}
+
+.resume .btn{
+    background-color:#2196f3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+.resume .btn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.resume .btn a:hover{
+    font-size: 13px;
+}
+/*Connect Styles*/
+
+.connect-wrapper{
+    justify-content: center;
+    text-align: center;
+}
+
+.connect-items h1{
+    color: lightseagreen;
+    text-decoration: underline;
+}
+
+input[type=text], select, textarea {
+    width: 33%; 
+    padding: 12px; 
+    border: 1px solid rgb(73, 73, 73); 
+    border-radius: 10px; 
+    box-sizing:border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    outline: none;
+    resize: vertical; 
+  }
+  .submit-button button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .submit-button button:hover {
+    background-color: #45a049;
+  }
+  .connect-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: sans-serif; 
+  }
+  .return-text{
+      margin-top: 20px;
+      font-size: 12px;
+      text-align: right;
+  }
+  .return-text a{
+      text-decoration:underline;
+      font-style: italic;
+  }
+
+  /*Footer Styles*/
+  .footer-design{
+      display: flex;
+      background-color: lightgray;
+      background-size: cover;
+      justify-content: center;
+  }
+
+  .footer-design .foot-content p{
+      font-size: small;
+      font-weight: 50px;
+  }
